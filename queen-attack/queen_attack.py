@@ -1,3 +1,4 @@
+fl = 0
 x1 = input("Enter the x-coordinate of queen 1: ")
 y1 = input("Enter the y-coordinate of queen 1: ")
 x2 = input("Enter the x-coordinate of queen 2: ")
@@ -14,3 +15,7 @@ else:
     y4 = y1 + c
     if (y2 == y3) or (y2 == y4):
         print "The queens can attack diagonally!"
+        fl = 1
+if fl == 0:
+    print "The queens cannot directly attack each other!"
+    
