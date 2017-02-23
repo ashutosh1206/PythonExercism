@@ -9,7 +9,7 @@ lim = input("Enter the limit upto which you want to print the prime numbers: ")
 listev = []
 listod = []
 for i in range(2,lim + 1):
-    if i in marklist:
+    if i in marklist or (i%2==0 and i!=2):
         continue
     else:
         j = 2
